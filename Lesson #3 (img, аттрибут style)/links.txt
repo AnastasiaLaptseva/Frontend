@@ -1,0 +1,11 @@
+Бесплатные онлайн-инструменты для работы с графикой:
+1) https://pixlr.com/ru/editor/
+2) https://www.canva.com/ru_ru/fotoredaktor/
+3) https://tinypng.com/ (сжимает png и jpg)
+
+Конвертеры в data:url base64:
+1) https://www.base64-image.de/
+2) https://base64.guru/converter/encode/image/jpg
+3) https://b64.io/
+
+https://realfavicongenerator.net/ -- генератор favicon
