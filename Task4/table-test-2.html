@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .complex-table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        caption{
+            font-weight: bold;
+            font-size: 30px; 
+            text-align: left;
+        }
+        .complex-table{
+            border: solid 2px blue;
+        }
+        .complex-table__subtitle th{
+            background-color: #888888; 
+            color: white;
+            padding: 5px;
+        }
+        .complex-table__grid td{
+            border: solid 2px blue; 
+            padding: 5px;
+        }
+        .complex-table__grid_center{
+            text-align: center;
+        }
+        .complex-table__grid_right{
+            text-align: right;
+        }
+        .flower{
+            border-collapse: collapse;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .flower__petal_red{
+            background-color: #ff0000;
+            width: 20px;
+            height: 20px;
+        }
+        .flower__petal_green{
+            background-color: #80ff00;
+            width: 20px;
+            height: 20px;
+        }
+        .decor{
+            border-collapse: collapse;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .decor__fresco{
+            width: 15px;
+            height: 15px;
+        }
+        
+        .decor__fresco_fuchsia{
+            background-color: #ff0c94;
+        }
+        .decor__fresco_rose{
+            background-color: #ef83ef;
+        }
+        .decor__fresco_pink{
+            background-color: #ff69b5;
+        }
+        .decor__fresco_crepe{
+            background-color: #ffb7c2;
+        }
+        .decor__fresco_green{
+            background-color: #1c811c;
+        }
+        .decor__fresco_fern{
+            background-color: #39b472;
+        }
+        .decor__fresco_olive{
+            background-color: #2ece2e;
+        }
+        .decor__fresco_lime{
+            background-color: #00ff00;
+        }
+        .tree{
+            border-collapse: collapse;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .tree__fir{
+            width: 15px;
+            height: 20px;
+        }
+        .tree__fir_green{
+            background-color: #008100;
+        }
+        .tree__fir_oliva{
+            background-color: #2a8c56;
+        }
+        .tree__fir_fern{
+            background-color: #39b472;
+        }
+        .tree__fir_lime{
+            background-color: #2ece2e;
+        }
+        .tree__fir_brown{
+            background-color: #8c430b;
+        }
+        .tree__fir_camel{
+            background-color: #b98703;
+        }
+        .tree__fir_backdrop{
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <table class="complex-table">
+        <caption>Пример сложной таблицы</caption>
+        <tr class="complex-table__subtitle">
+            <th>Название 1</th>
+            <th>Название 2</th>
+            <th>Еще название</th>
+            <th>Куча элементов</th>
+            <th>Список 1</th>
+            <th>Список 2</th>
+        </tr>
+        <tr class="complex-table__grid">
+            <td rowspan="11" class="complex-table__grid_center">JMPG</td>
+            <td rowspan="5">CST</td>
+            <td rowspan="3">CT</td>
+            <td>ADS</td>
+            <td class="complex-table__grid_center">1</td>
+            <td class="complex-table__grid_center">10</td>
+        </tr>
+        <tr class="complex-table__grid">
+            <td>BTO</td>
+            <td class="complex-table__grid_center">2</td>
+            <td class="complex-table__grid_center">15</td>
+        </tr>
+        <tr class="complex-table__grid">
+            <td>CSI</td>
+            <td class="complex-table__grid_center">3</td>
+            <td class="complex-table__grid_center">16</td>
+        </tr>
+        <tr class="complex-table__grid">
+            <td rowspan="2" class="complex-table__grid_center">VCT</td>
+            <td>ADS</td>
+            <td class="complex-table__grid_center">4</td>
+            <td class="complex-table__grid_center">10</td>
+        </tr>
+        <tr class="complex-table__grid">
+            <td>BTO</td>
+            <td class="complex-table__grid_center">5</td>
+            <td class="complex-table__grid_center">15</td>
+        </tr>
+        <tr class="complex-table__grid">
+            <td colspan="3" class="complex-table__grid_right">Sub Total</td>
+            <td class="complex-table__grid_center">6</td>
+            <td class="complex-table__grid_center">15</td>
+        </tr>
+        <tr class="complex-table__grid">
+            <td rowspan="4">CST</td>
+            <td rowspan="3">CT</td>
+            <td>ADS</td>
+            <td class="complex-table__grid_center">7</td>
+            <td class="complex-table__grid_center">10</td>
+        </tr>
+        <tr class="complex-table__grid">
+            <td>BTO</td>
+            <td class="complex-table__grid_center">8</td>
+            <td class="complex-table__grid_center">15</td>
+        </tr>
+        <tr class="complex-table__grid">
+            <td>CSI</td>
+            <td class="complex-table__grid_center">9</td>
+            <td class="complex-table__grid_center">16</td>
+        </tr>
+        <tr class="complex-table__grid">
+            <td class="complex-table__grid_center">VCT</td>
+            <td>ADS</td>
+            <td class="complex-table__grid_center">10</td>
+            <td class="complex-table__grid_center">10</td>
+        </tr>
+        <tr class="complex-table__grid">
+            <td colspan="3" class="complex-table__grid_right">Sub Total</td>
+            <td class="complex-table__grid_center">11</td>
+            <td class="complex-table__grid_center">15</td>
+        </tr>
+
+    </table>
+    <table class="flower">
+        <tr class="flower__petal">
+            <td class="flower__petal_red"></td>
+            <td></td>
+            <td class="flower__petal_red"></td>
+            <td class="flower__petal_green"></td>
+            <td class="flower__petal_red"></td>
+            <td></td>
+            <td class="flower__petal_red"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="flower__petal_red"></td>
+            <td class="flower__petal_green"></td>
+            <td></td>
+            <td class="flower__petal_green"></td>
+            <td class="flower__petal_red"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="flower__petal_red"></td>
+            <td class="flower__petal_green"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="flower__petal_green"></td>
+            <td class="flower__petal_red"></td>
+        </tr>
+        <tr>
+            <td class="flower__petal_green"></td>
+            <td></td>
+            <td></td>
+            <td class="flower__petal_red"></td>
+            <td></td>
+            <td></td>
+            <td class="flower__petal_green"></td>
+        </tr>
+        <tr>
+            <td class="flower__petal_red"></td>
+            <td class="flower__petal_green"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="flower__petal_green"></td>
+            <td class="flower__petal_red"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="flower__petal_red"></td>
+            <td class="flower__petal_green"></td>
+            <td></td>
+            <td class="flower__petal_green"></td>
+            <td class="flower__petal_red"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="flower__petal_red"></td>
+            <td></td>
+            <td class="flower__petal_red"></td>
+            <td class="flower__petal_green"></td>
+            <td class="flower__petal_red"></td>
+            <td></td>
+            <td class="flower__petal_red"></td>
+        </tr>
+    </table>
+    <table class="decor">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_green"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td  class="decor__fresco decor__fresco_green"></td>
+            <td class="decor__fresco decor__fresco_fern"></td>
+            <td  class="decor__fresco decor__fresco_green"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_pink"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td  class="decor__fresco decor__fresco_green"></td>
+            <td class="decor__fresco decor__fresco_fern"></td>
+            <td class="decor__fresco decor__fresco_olive"></td>
+            <td class="decor__fresco decor__fresco_fern"></td>
+            <td  class="decor__fresco decor__fresco_green"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_pink"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_pink"></td>
+            <td class="decor__fresco decor__fresco_crepe"></td>
+            <td class="decor__fresco decor__fresco_pink"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_green"></td>
+            <td class="decor__fresco decor__fresco_fern"></td>
+            <td class="decor__fresco decor__fresco_olive"></td>
+            <td class="decor__fresco decor__fresco_lime"></td>
+            <td class="decor__fresco decor__fresco_olive"></td>
+            <td class="decor__fresco decor__fresco_fern"></td>
+            <td class="decor__fresco decor__fresco_green"></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_pink"></td>
+            <td class="decor__fresco decor__fresco_crepe"></td>
+            <td class="decor__fresco decor__fresco_pink"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_pink"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_green"></td>
+            <td class="decor__fresco decor__fresco_fern"></td>
+            <td class="decor__fresco decor__fresco_olive"></td>
+            <td class="decor__fresco decor__fresco_fern"></td>
+            <td class="decor__fresco decor__fresco_green"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_pink"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_green"></td>
+            <td class="decor__fresco decor__fresco_fern"></td>
+            <td class="decor__fresco decor__fresco_green"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td class="decor__fresco decor__fresco_rose"></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_green"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="decor__fresco decor__fresco_fuchsia"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table class="tree">
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_green"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_green"></td>
+            <td class="tree__fir tree__fir_green"></td>
+            <td class="tree__fir tree__fir_green"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_green"></td>
+            <td class="tree__fir tree__fir_green"></td>
+            <td class="tree__fir tree__fir_green"></td>
+            <td class="tree__fir tree__fir_green"></td>
+            <td class="tree__fir tree__fir_green"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_oliva"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_fern"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+            <td class="tree__fir tree__fir_lime"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_brown"></td>
+            <td class="tree__fir tree__fir_camel"></td>
+            <td class="tree__fir tree__fir_brown"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_brown"></td>
+            <td class="tree__fir tree__fir_camel"></td>
+            <td class="tree__fir tree__fir_brown"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_brown"></td>
+            <td class="tree__fir tree__fir_camel"></td>
+            <td class="tree__fir tree__fir_brown"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+        <tr>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_brown"></td>
+            <td class="tree__fir tree__fir_camel"></td>
+            <td class="tree__fir tree__fir_brown"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+            <td class="tree__fir tree__fir_backdrop"></td>
+        </tr>
+    </table>
+   </body>
+</html>

@@ -1,0 +1,5 @@
+1) https://github.com/yoksel/common-words
+2) https://ru.hexlet.io/blog/posts/oshibki-imenovaniya-v-vyorstke
+3) https://habr.com/ru/company/ruvds/blog/347194/
+4) https://ru.bem.info/methodology/quick-start/
+5) https://ru.bem.info/methodology/naming-convention/

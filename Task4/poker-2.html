@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 5px; 
+            background-color: cyan;
+        }
+        .frame-left{
+            background: url(img/l.png) repeat-y left;
+        }
+        .frame-top{
+            background: url(img/t.png) repeat-x top;
+        }
+        .frame-right{
+            background: url(img/r.png) repeat-y right;
+        }
+        .frame-bottom{
+            background: url(img/b.png) repeat-x bottom;
+        }
+        .frame{
+            background-color: white;
+        }
+        .frame__angle-tl{
+            background: url(img/l-t.png) no-repeat top left;
+        }
+        .frame__angle-tr{
+            background: url(img/r-t.png) no-repeat top right;
+        }
+        .frame__angle-bl{
+            background: url(img/l-b.png) no-repeat bottom left;
+        }
+        .frame__angle-br{
+            background: url(img/r-b.png) no-repeat bottom right;
+        }
+        .frame__text{
+            padding: 70px;
+        }
+        span{
+            font-weight:bold;
+        }
+        .section-cards{
+            border: solid 2px green;
+            padding: 20px;
+        }
+        .card{
+            width: 140px; 
+            height: 190px; 
+            display: inline-block;
+            background-image: url(img/cards.png);
+        }
+        .ace{
+            background-image: url(img/cards.png); 
+            background-position: 0 -2330px;
+        }
+        .king{
+            background-image: url(img/cards.png); 
+            background-position: -145px -2135px;
+        }
+        .lady{
+            background-image: url(img/cards.png); 
+            background-position: -289px -1939px;
+        }
+        .jack{
+            background-image: url(img/cards.png); 
+            background-position:-432px -1745px;
+        }
+        .ten{
+            background-image: url(img/cards.png); 
+            background-position: -145px -1552px;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame frame-left">
+        <div class="frame-top">
+            <div class="frame-right">
+                <div class="frame-bottom">
+                    <div class="frame__angle-tl">
+                        <div class="frame__angle-tr">
+                            <div class="frame__angle-bl">
+                                <div class="frame__angle-br">
+                                    <div class="frame__text">
+                                        <h2>Покер</h2>
+                                        <span>По́кер</span> (англ. poker) — карточная игра, цель которой — выиграть ставки, собрав 
+                                        как можно более высокую покерную комбинацию, используя 4 (старый классический вариант), 
+                                        или 5 карт, или вынудив всех соперников прекратить участвовать в игре. 
+                                        Игра идёт с полностью или частично закрытыми картами. Конкретные правила могут 
+                                        варьироваться в зависимости от разновидности покера. Обобщающими элементами всех 
+                                        разновидностей покера являются комбинации и наличие торговли в процессе игры.<br>
+                                        <br>
+                                        Ввиду того, что игрок не знает карты своих противников, покер является игрой с 
+                                        неполной информацией, как и многие другие карточные игры, в отличие от, например,
+                                        шахмат, в которых оба игрока видят положение всех фигур на доске.
+                                        
+                                        <h3>Комбинация в покере &#8212; стрит</h3>
+                                        <div class="section-cards"> 
+                                            <div class="card ace"></div>
+                                            <div class="card king"></div>
+                                            <div class="card lady"></div>
+                                            <div class="card jack"></div>
+                                            <div class="card ten"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
