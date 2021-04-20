@@ -1,0 +1,2 @@
+1) https://ishadeed.com/article/unusual-use-cases-pseudo-elements/
+2) http://apps.eky.hk/css-triangle-generator/

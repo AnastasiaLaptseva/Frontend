@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document for pseudoelements and BEM</title>
+
+	<style>
+		.test {
+			/*border: 2px blue solid;*/
+		}
+
+		.test::before {
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 6px 0 6px 8px;
+			border-color: transparent transparent transparent #007bff;
+			margin-right: 5px;
+		}
+
+		.test::after {
+			content: "🦄";
+		}
+
+		.menu {}
+		.menu__list {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		.menu__item {
+			float: left;
+			padding: 0;
+			margin: 0;
+			width: 20%;
+		}
+		.menu__link {
+			display: block;
+			padding: 8px 12px;
+			text-align: center;
+			font-size: 18px;
+			text-decoration: none;
+			background-color: blue;
+			color: white;
+		}
+		.menu__link:hover,
+		.menu__link_active {
+			background-color: yellow;
+			color: black;
+			text-decoration: none;
+		}
+
+		.menu_theme-bordered .menu__link {
+			background-color: transparent;
+			color: blue;
+			border: 2px blue solid;
+		}
+
+		.menu_theme-bordered .menu__link:hover,
+		.menu_theme-bordered .menu__link_active {
+			background-color: transparent;
+			border-color: red;
+			color: red;
+		}
+
+		.menu_type-vertical {
+			width: 240px;
+		}
+
+		.menu_type-vertical .menu__item {
+			float: none;
+			width: auto;
+		}
+
+		.menu_type-vertical .menu__link {
+			text-align: left;
+		}
+
+		.clearfix::before,
+		.clearfix::after {
+		    content: " "; /* 1 */
+		    display: table; /* 2 */
+		}
+
+		.clearfix::after {
+		    clear: both;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="header">
+		<div class="menu menu_type-vertical menu_theme-bordered">
+			<ul class="menu__list clearfix">
+				<li class="menu__item">
+					<a class="menu__link" href="#">Главная</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link menu__link_active" href="#">О нас</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">Продукция</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">Новости</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">Контакты</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<h1>Hello</h1>
+
+	<p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Aliquid, soluta placeat tenetur architecto eaque facilis, quaerat itaque unde reprehenderit deserunt exercitationem consectetur, blanditiis cupiditate voluptatibus laborum necessitatibus ex, provident veritatis.</p>
+
+	<h2>Hello, again...</h2>
+
+	<ul>
+		<li>list item 1</li>
+		<li>list item 2</li>
+		<li>list item 3</li>
+		<li>list item 4</li>
+		<li>list item 5</li>
+	</ul>
+	
+</body>
+</html>

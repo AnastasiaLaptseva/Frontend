@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .title {
+        font-size: x-large;
+    }
+    .blank{
+        text-align: center;
+        color: white;
+    }
+    .slider{
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .img{
+        position: relative;
+    }
+    .sprite{
+        position: absolute;
+        width: 75px;
+        height: 425px;
+        z-index: 5;
+    }
+    .sprite-next{
+        background: url(img/prev-next-sprite.png) no-repeat -35px 200px;
+        right: 0px;
+        top: 0;
+    }
+    .sprite-prev{
+        background: url(img/prev-next-sprite.png) no-repeat 35px 200px;
+        left: 0px;
+        top: 0;
+    }
+    .text{
+        height: 100px;
+        position: absolute;
+        left: 300px;
+        top: 100px;
+        margin: 25px;
+        font-size: x-large;
+    }
+    hr{
+        height: 2px;
+        background-color: white;
+        margin: 5px;
+    }
+    .text span{
+        font-size: xxx-large;
+    }
+    .list{
+        position: absolute;
+        left: 480px;
+        bottom: 0;
+        width: 200px;
+        height: 50px;
+        margin: 20px
+        
+    }
+    .list li{
+        float: left;
+        margin-right: 10px;
+        list-style-type: none;
+        
+    }  
+    .items li a{
+        display: block;
+        width: 10px;
+        height: 20px;
+        text-decoration: none;
+        background-color: white;
+        padding: 0px 5px;
+     }
+    li a:hover{
+            background-color:#FF6600;
+        }
+
+</style>
+<body>
+    <div class="blank">
+        <p class="title">Верстка заготовки для слайдера</p>
+        <div class="slider">
+            <img src="img/slider-img-01.jpg" alt="girl" title="ball" class="img">
+                <a href="#" class="sprite sprite-next"></a>
+                <a href="#" class="sprite sprite-prev"></a>
+                <div class="text">
+                   <hr> <span>КОМФОРТНАЯ ОДЕЖДА</span><hr> для всех видов спорта
+                </div>
+                <div class="list">
+                    <ul class="items">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(177, 176, 176);
+        }
+        h1{
+            color: white;
+        }
+        nav ul{
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            display: block;
+            color: white;
+        }
+        .menu > li {
+            float: left;
+            position: relative;
+            background-color: black;
+            width: 20%;
+        }
+        .menu > li > a:hover{
+            background-color: rgba(170, 170, 226, 0.856);
+        }
+        .menu > li > a {  
+            padding: 10px 30px;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        .home__submenu a:hover {
+            background-color: #9c9797;
+            color: rgb(95, 94, 94);
+            border-left: solid 4px blue;
+        }
+        .foto__submenu a:hover {
+            background-color: #9c9797;
+            color: rgb(95, 94, 94);
+            border-left: solid 4px blue;
+        }
+        .home__submenu {
+            position: absolute;
+            min-width: 130px;
+            background-color: white;
+            color: rgb(168, 164, 164);
+            visibility: hidden;
+            opacity: 0; 
+        }
+        .home__submenu li {
+            position: relative;
+        }
+        .home__submenu li a {
+            color: #747070;
+            padding: 10px 20px;
+            font-size: 13px;
+        }
+        nav li:hover > .home__submenu {
+            visibility: visible;
+            opacity: 1;
+        }
+        .foto__submenu{
+            position: absolute;
+            min-width: 130px;
+            background-color: white;
+            color: rgb(168, 164, 164);
+            visibility: hidden;
+            opacity: 0; 
+        }
+        .foto__submenu li{
+            position: relative;
+        }
+        .foto__submenu li a {
+            color: #747070;
+            padding: 10px 20px;
+            font-size: 13px;
+        }
+        nav li:hover > .foto__submenu {
+            visibility: visible;
+            opacity: 1;
+        }
+        .foto__submenu .foto__submenu {
+        position: absolute;
+        left: 100%;
+        top: -1px;        
+        }
+        
+        .menu > li > a::before{
+            content:"";
+            display: inline-block;
+            background: url(img/sprite.png) no-repeat;
+            width: 30px;
+            height: 25px;
+        }
+        .menu > li > .info::before{
+            background-position: -34px -4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Многоуровневое горизонтальное меню</h1>
+    <nav>
+        <ul class="menu">
+            <li class="home"><a href="#">Главная</a>
+                <ul class="home__submenu">
+                    <li><a href="#">Подменю 1</a></li>
+                    <li><a href="#">Подменю 2</a></li>
+                    <li><a href="#">Подменю 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="info">О нас</a></li>
+            <li class="foto"><a href="#">Портфолио</a>
+                <ul class="foto__submenu">
+                    <li><a href="#">Подменю 1</a></li>
+                    <li><a href="#">Уровень 3 меню</a>
+                        <ul class="foto__submenu">
+                            <li><a href="#">Подменю 4</a></li>
+                            <li><a href="#">Подменю 5</a></li>
+                            <li><a href="#">Подменю 6</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
