@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        .steps{
+            margin: 30px auto;
+        }
+        .steps__list {
+			list-style: none;
+
+		}
+		.steps__item {
+			float: left;
+			padding: 5px;
+			margin: 5px;
+		}
+        .steps__item::before{
+            content: "";
+            display: block;
+            border-top: 3px solid rgba(210, 210, 214, 1);
+            margin-bottom: -23px;
+            margin-left: -20px;
+        }
+        .steps__item:first-child::before{
+            content: "";
+            display: block;
+            border-top: 3px solid rgba(210, 210, 214, 0);
+            margin-bottom: -23px;
+            margin-left: -20px;
+        }
+		.steps__link {
+			display: block;
+			padding: 8px 12px;
+			text-align: center;
+			font-size: 18px;
+			text-decoration: none;
+			background-color: rgba(210, 210, 214, 1);
+			color: black;
+            border: solid 3px rgba(210, 210, 214, 1);
+            border-radius: 50%;
+        }
+        
+		.steps__link_active {
+			background-color:purple;
+			color: rgba(253, 251, 251, 0.993);
+			text-decoration: none;
+		}
+        .steps__link_prev {
+			background-color:rgba(164, 233, 74, 1);
+			color: rgba(253, 251, 251, 0.993);
+			text-decoration: none;
+		}
+        
+
+</style>
+<body>
+    <div class="steps">
+        <ul class="steps__list">
+            <li class="steps__item">
+                <a class="steps__link steps__link_prev" href="#">1</a>
+            </li>
+            <li class="steps__item">
+                <a class="steps__link steps__link_prev" href="#">2</a>
+            </li>
+            <li class="steps__item">
+                <a class="steps__link steps__link_prev" href="#">3</a>
+            </li>
+            <li class="steps__item">
+                <a class="steps__link steps__link_active" href="#">4</a>
+            </li>
+            <li class="steps__item">
+                <a class="steps__link" href="#">5</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
