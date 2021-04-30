@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: lightgrey;
+            color: gray;
+        }
+        .question > li{
+            background-color: white;
+            border: solid 2px rgb(184, 181, 181);
+            width: 400px;
+            border-radius: 25px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .answer li:nth-child(1){
+            background-color: white;
+            border: solid 2px rgb(184, 181, 181);
+            width: 500px;
+            border-radius: 25px;
+            padding: 5px;
+            margin: 5px;
+        }
+        li{
+            list-style-type: none;
+            background: url(img/icons8-cheburashka-50.png) no-repeat;
+            padding-left: 20px;
+
+        }
+       /*.answer li:nth-child(1):before{
+            content: url(img/icons8-cheburashka-50.png);
+            display: block;
+            width: 50px;
+            border: solid 3px white ;
+        }*/
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <ul class="answer">
+                    <li ><p><b>User234451</b> спрашивает:</p>
+                        <p>Как добавить CSS комментарий?</p>
+                    </li>
+                    <li>
+                    <ul class="question">
+                            <li ><p><b>User11111</b> отвечает:</p>
+                                <p>Добавить CSS комментарий легко: просто заключите свой комментарий между 
+                                    открывающимся и закрывающимся тегом</p></li>
+                            <li>
+                                <p><b>User980771</b> отвечает:</p>
+                                <p>Часто я использую CSS комментарии в коде для структуризации стилей. 
+                                    Чтобы сделать это, я добавляю комментарии с большим количеством дефисов. 
+                                    Они формируют более очевидные разрывы на странице.
+                                    Комментирующие теги также могут быть полезны в процессе написания CSS, 
+                                    так как они позволяют «отключить» области кода, чтобы увидеть, что происходит.
+                                    Поскольку комментирующие теги сообщают браузеру о том, что нужно игнорировать 
+                                    все, что находится между ними. Благодаря этому их можно использовать 
+                                    для временного отключения некоторых частей кода CSS. </p>
+                            </li>
+                            <li>
+                                <p><b>User66661</b> отвечает:</p>
+                                <p>Комментарии, безусловно, полезны. Но имейте в виду, что чем 
+                                    больше комментариев вы добавляете в код, тем больше увеличивается его 
+                                    объем, а это влияет на скорость загрузки и производительность сайта.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

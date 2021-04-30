@@ -8,7 +8,8 @@
 <style>
     body{
         margin: 0;
-        background-color: #f0e78d;
+        padding: 0;
+        background-color: white;
         font-family: sans-serif;
     }
     .header{
@@ -21,11 +22,11 @@
         margin: 0;
     }
     .sidebar{
-        
-        padding: 10px;
+        padding-left: 15px;
         margin: 0;
         float: left;
-        width: 250px;
+        width: 235px;
+        background-color: #f0e78d;
           
     }
     .sidebar p{
@@ -44,7 +45,9 @@
         float: left;
         padding: 0 20px;
     }
-    
+    .main{
+        background-color: #f0e78d;
+    }
     .content{
         background: url(img/ball11.png) repeat-y top right;
         padding: 0;
@@ -84,33 +87,35 @@
 </style>
 <body>
     <h2 class="header">Привет участникам соревнований!</h2>
-    <div class="sidebar"> <p>Виды спорта:</p>
-    <ul class="list">
-        <li class="item"><a href="#"><span>конькобежный спорт</span></a></li>
-        <li class="item"><a href="#"><span>биатлон</span></a></li>
-        <li class="item"><a href="#"><span>футбол</span></a></li>
-        <li class="item"><a href="#"><span>стрельба из лука</span></a></li>
-        <li class="item"><a href="#"><span>прыжки в длину</span></a></li>
-        <li class="item"><a href="#"><span>прыжки в высоту</span></a></li>
-    </ul>
-    </div>
-    
-    <div class="content">
-        <div>
-            <p class="title">ФУТБОЛ</p>
-        <img src="img/football1.jpeg" alt="football" title="football" class="img_football">
-        
-        <p class="text">Футбoл — командный вид спорта, в котором целью является забить мяч в ворота
-            соперника ногами или другими частями тела (кроме рук) большее количество раз, 
-            чем команда соперника. <br><br>
-            Есть 17 официальных правил игры, каждое из которых содержит список оговорок и 
-            руководящих принципов. Эти правила предназначены для применения на всех уровнях 
-            футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины 
-            и люди с ограниченными физическими возможностями. Законы очень часто формулировались 
-            в общих чертах, которые позволяют упростить их применения в зависимости от характера игры.
-        </p>
-        <div class="clear"></div>
-        </div>        
+    <div class="main">
+        <div class="sidebar"> <p>Виды спорта:</p>
+            <ul class="list">
+                <li class="item"><a href="#"><span>конькобежный спорт</span></a></li>
+                <li class="item"><a href="#"><span>биатлон</span></a></li>
+                <li class="item"><a href="#"><span>футбол</span></a></li>
+                <li class="item"><a href="#"><span>стрельба из лука</span></a></li>
+                <li class="item"><a href="#"><span>прыжки в длину</span></a></li>
+                <li class="item"><a href="#"><span>прыжки в высоту</span></a></li>
+            </ul>
+            </div>
+            
+            <div class="content">
+                <div>
+                    <p class="title">ФУТБОЛ</p>
+                <img src="img/football1.jpeg" alt="football" title="football" class="img_football">
+                
+                <p class="text">Футбoл — командный вид спорта, в котором целью является забить мяч в ворота
+                    соперника ногами или другими частями тела (кроме рук) большее количество раз, 
+                    чем команда соперника. <br><br>
+                    Есть 17 официальных правил игры, каждое из которых содержит список оговорок и 
+                    руководящих принципов. Эти правила предназначены для применения на всех уровнях 
+                    футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины 
+                    и люди с ограниченными физическими возможностями. Законы очень часто формулировались 
+                    в общих чертах, которые позволяют упростить их применения в зависимости от характера игры.
+                </p>
+                <div class="clear"></div>
+                </div>        
+            </div>
     </div>
     
     <div class="footer">Главное не победа, а участие!</div>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+          margin: auto;
+          max-width: 1200px;
+          min-width: 320px;
+        }
+        .gallery:hover {
+            background-color: black;
+        }
+        .gallery-size{
+            width: 390px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 1200px;
+        }
+        .foto {
+            padding: 3px 6px;
+            float: left;
+            width: 33.3%;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            font-size: xx-large;
+        }
+        
+        @media (max-width: 768px){
+            .foto{
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+            .gallery-size{
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px){
+            .foto{
+                width: 100%;
+                margin: 0 auto;
+            }
+            .gallery-size{
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+      <h1>Адаптивная верстка галереи</h1>
+      <div class="foto">
+        <div class="gallery">
+          <a target="_blank" href="img/desert.jpg">
+            <img src="img/desert.jpg" alt="desert" title="desert" class="gallery-size">
+          </a>
+        </div>
+      </div>
+      <div class="foto">
+        <div class="gallery">
+          <a target="_blank" href="img/field.jpg">
+            <img src="img/field.jpg" alt="field" title="field" class="gallery-size">
+          </a>
+        </div>
+      </div>
+      <div class="foto">
+        <div class="gallery">
+          <a target="_blank" href="img/mount.jpg">
+            <img src="img/mount.jpg" alt="mountain" title="mountain" class="gallery-size">
+          </a>
+        </div>
+      </div>
+      <div class="foto">
+        <div class="gallery">
+          <a target="_blank" href="img/palms.jpg">
+            <img src="img/palms.jpg" alt="palms" title="palms" class="gallery-size">
+          </a>
+        </div>
+      </div>
+      <div class="foto">
+        <div class="gallery">
+          <a target="_blank" href="img/pose.jpg">
+            <img src="img/pose.jpg" alt="rose" title="rose" class="gallery-size">
+          </a>
+        </div>
+      </div>
+      <div class="foto">
+        <div class="gallery">
+          <a target="_blank" href="img/see.jpg">
+            <img src="img/see.jpg" alt="view" title="view" class="gallery-size">
+          </a>
+        </div>
+      </div>
+      <div class="foto">
+        <div class="gallery">
+          <a target="_blank" href="img/beach.jpg">
+            <img src="img/beach.jpg" alt="sky" title="beach" class="gallery-size">
+          </a>
+        </div>
+      </div>
+      <div class="foto">
+        <div class="gallery">
+          <a target="_blank" href="img/tree.jpg">
+            <img src="img/tree.jpg" alt="tree" title="tree" class="gallery-size">
+          </a>
+        </div>
+      </div>
+      <div class="foto">
+        <div class="gallery">
+          <a target="_blank" href="img/house.jpg">
+            <img src="img/house.jpg" alt="house" title="house" class="gallery-size">
+          </a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

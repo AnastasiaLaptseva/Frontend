@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+            margin: 0;
+            padding: 0;
+            color: rgb(100, 99, 99);
+
+        }
+        fieldset{
+            border-color: rgba(94, 138, 233, 0.699);
+            border-radius: 0 0 25px 25px;
+            width: 500px;
+            background-color: white;
+            margin: 0 auto;
+        }
+        .title{
+            background-color:rgba(94, 138, 233, 0.699);
+            color: white;
+            width: 522px;
+            text-align: center;
+            border: solid 2px rgba(94, 138, 233, 0.699);
+            margin: 25px auto 0;
+            border-radius: 25px 25px 0 0;
+        }
+        label{
+            font-weight: bold;
+            padding: 20px;
+            font-size: small;
+        }
+        input{
+            width: 400px;
+            padding: 7px 7px 7px 30px;
+            margin: 15px auto;
+            border-radius: 5px;
+            border: solid 1px grey;
+            
+        }
+        #button{
+            width: 250px;
+            background-color: aqua;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            margin-left: 100px;
+        }
+        .login{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="title"><h1>Обратная связь</h1></div>
+            <fieldset>
+                <div>
+                <div class="login">
+                    <label for="login">Имя: </label>
+                    <div>
+                        <input id="login" type="text" name="login" required placeholder="Введите Ваше имя">
+                    </div>
+                </div>
+                <div>
+                    <label for="mail">Email: </label>
+                    <div>
+                        <input id="mail" type="email" name="mail" required autofocus  placeholder="Введите адрес Вашей почты">
+                    </div>
+                </div>
+                <div>
+                    <label for="number">Телефон: </label>
+                    <div>
+                        <input id="number" type="text" name="number" required placeholder="Введите номер телефона">
+                    </div>
+                </div>
+                <div>
+                    <label for="message">Сообщение: </label>
+                    <div>
+                        <input id="message" type="text" name="message" required placeholder="Текст сообщения">
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" id="button" name="button" value="Отправить">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .send{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+<fieldset>
+    <legend>Анкета нового пользователя</legend>
+    <div>
+        <label for="text">Имя: </label>
+        <input id="text" type="text" name="text" required autofocus>
+    </div><br>
+    <div>
+        <label for="surname">Фамилия: </label>
+        <input id="surname" type="text" name="text" required>
+    </div><br>
+    <div>
+        <label>Укажите пол:</label>
+            <label for="gender1">мужской </label>
+            <input id="gender1" type="radio" name="gender">
+            <label for="gender2">женский </label>
+            <input id="gender2" type="radio" name="gender">
+    </div><br>
+    <div>
+        <label for="country">Страна проживания </label>
+        <select id="country" name="country">
+            <option value="1">Беларусь</option>
+            <option value="2">Россия</option>
+            <option value="3">Аргентина</option>
+            <option value="4">Испания</option>
+        </select>
+    </div><br>
+    <div>
+        <label>Владение языками:</label>
+        <input id="language1" type="checkbox" name="language" >
+        <label for="language1">русский </label>
+        <input id="language2" type="checkbox" name="language" >
+        <label for="language2"> белорусский </label>
+        <input id="language3" type="checkbox" name="language" >
+        <label for="language3"> английский </label>
+    </div><br>
+    <div>
+        <label for="file">Фото профиля:</label>
+        <input type="file" id="file" dir="ltr">
+    </div><br>
+    <div>
+        <label for="log">Введите логин: </label>
+        <input id="log" type="text" name="log" required>
+    </div><br>
+    <div>
+        <label for="mail">Введите email: </label>
+        <input id="mail" type="email" name="mail" required>
+    </div><br>
+    <div>
+        <label for="password">Введите пароль: </label>
+        <input id="password" type="password" name="password" required>
+    </div><br>
+    <div>
+        <label for="password2">Повторите пароль: </label>
+        <input id="password2" type="password" name="password" required>
+    </div><br>
+    <hr><br>
+    <div class="send">
+        <input type="submit" value="Отправить" disabled >
+        <input type="submit" value="Отменить">
+    </div><br>
+</fieldset>
+    </form>
+</body>
+</html>

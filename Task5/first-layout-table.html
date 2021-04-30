@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
     table{
         border-collapse: collapse;
         font-family: sans-serif;
@@ -21,9 +25,11 @@
         margin: 0;
     }
     .sidebar{
-        padding: 10px;
+        padding: 20px 0 0 10px;
         margin: 0;
         background-color: #f0e78d;
+        width: 240px;
+        vertical-align: top;
     }
     tr td {
         padding: 0;
@@ -44,6 +50,7 @@
     .section{
         background: url(img/ball11.png) repeat-y top right;
         background-color: white;
+        vertical-align: top;
     }
     .img_football{
         float: left;
@@ -81,8 +88,8 @@
         <tr>
             <td colspan="2" class="header">Привет участникам соревнований!</td>
         </tr>
-        <tr class="sidebar">
-            <td><h4>Виды спорта:</h4>
+        <tr>
+            <td class="sidebar"><h4>Виды спорта:</h4>
                 <ul class="list">
                     <li class="item"><a href="#"><span>конькобежный спорт</span></a></li>
                     <li class="item"><a href="#"><span>биатлон</span></a></li>
