@@ -82,8 +82,10 @@
         }
         @media(max-width: 768px){
             .img{
-                max-width: 320px;
-                height: 110px;
+                max-width: 768px;
+                margin: 0 auto;
+                max-height: 200px;
+                width: 85%;
             }
             .header h1{
                 margin: 0 auto;
@@ -91,17 +93,27 @@
                 font-size: x-large;
             }
             .blok-news{
-                max-width: 320px;
+                max-width: 768px;
                 display: block;
+                margin: 0;
             }
             .news{
                 display: block;
-                width: 290px;
+                width: 90%;
                 height: 116px;
-                margin: 10px 0;
+                margin: 30px auto;
+            }
+            .news:first-child{
+                margin-left: auto;
+            }
+            .news:last-child{
+                margin-right: auto;
             }
             button{
-                width: 320px;
+                width: 105%;
+                position: relative;
+                bottom: -33px;
+                box-sizing: border-box;
             }
             .text{
                 margin: 10px;
